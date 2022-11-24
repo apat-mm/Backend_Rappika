@@ -22,7 +22,7 @@ app.put("/products-cart/:productId", controllers.putProduct);
 // DELETE 
 app.delete("/products-cart/:productId", controllers.deleteProduct);
 
-app.listen(process.env.PORT, () => {
+app.listen((process.env.PORT||4000), () => {
     console.log("Server funcionando uwu")
     db();
 });
