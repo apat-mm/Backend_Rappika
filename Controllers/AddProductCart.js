@@ -12,6 +12,7 @@ const addProductCart = async (req, res) => {
 
   /* Nos fijamos si el producto ya esta en el carrito */
   const estaEnElCarrito = await Cart.findOne({ name });
+  
 
   /* Si no tenemos el producto */
   if (!estaEnProducts) {
