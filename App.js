@@ -16,7 +16,7 @@ app.get("/products-cart", controllers.getProductsCart);
 //POST 
 app.post("/products-cart", controllers.addProductCart);
 
-//PUT 
+
 app.put("/products-cart/:productId", controllers.putProduct);
 
 // DELETE 
